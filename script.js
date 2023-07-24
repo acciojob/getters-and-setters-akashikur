@@ -1,10 +1,10 @@
 //complete this code
 class Person {
-	Constructor(name,age){
-		this.name=name;
-		this.age=age;
-	}
-	
+	 constructor(name, age) {
+    this._name = name;
+    this._age = age;
+  }
+
   get name() {
     return this._name;
   }
@@ -15,13 +15,13 @@ class Person {
 }
 
 class Student extends Person {
-	 study() {
+	study() {
     console.log(`${this._name} is studying.`);
   }
 }
 
 class Teacher extends Person {
-	 teach() {
+	  teach() {
     console.log(`${this._name} is teaching.`);
   }
 }
